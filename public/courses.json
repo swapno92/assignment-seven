@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/hDPn6TT/1.png",
+        "name": "Introduction to C Programming",
+        "credit": 1,
+        "price": 15000,
+        "details": "Learn the fundamentals of the C programming language, one of the most widely used and influential programming languages in the world. Whether you're a complete beginner or have some coding experience."
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/gmSfTYk/2.png",
+        "name": "Introduction to Algorithms",
+        "credit": 2,
+        "price": 25000,
+        "details": "This comprehensive course provides a solid foundation in algorithm design and analysis. It covers a wide range of algorithms and data structures commonly used in computer science and programming."
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/mtd7Hcj/3.png",
+        "name": "Introduction to C++ for DSA",
+        "credit": 10,
+        "price": 10000,
+        "details": "This course is designed to teach you the fundamentals of C++ programming while focusing on its practical applications in data structures and algorithms.this course provides a solid foundation."
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/JnzMVdQ/4.png",
+        "name": "Basic Data Structures",
+        "credit": 5,
+        "price": 35000,
+        "details": "This course is a comprehensive introduction to fundamental data structures that are essential for computer science and programming. You will learn how to efficiently organize and manipulate data."
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/wSkrMbG/5.png",
+        "name": "Introduction to OOP Python",
+        "credit": 5,
+        "price": 19000,
+        "details": "This course is designed to provide a solid foundation in Object-Oriented Programming (OOP) using the Python programming language.this course will teach you the essential concepts and techniques."
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/LP6njhV/6.png",
+        "name": "Software Engineering",
+        "credit": 2,
+        "price": 23000,
+        "details": "This comprehensive course covers the principles and practices of software engineering, equipping you with the skills and knowledge needed to design, develop, and maintain high-quality software systems."
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/wgMyXTB/7.png",
+        "name": "AWS, Cloud Computing",
+        "credit": 5,
+        "price": 35000,
+        "details": "This course is your gateway to mastering Amazon Web Services (AWS) and the fundamentals of cloud computing. Whether you're an IT professional, developer, or business leader."
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/q1c2ZzS/8.png",
+        "name": "Database (MySQL)",
+        "credit": 5,
+        "price": 19000,
+        "details": "This comprehensive course is designed to teach you the fundamentals of database management using MySQL, one of the world's most popular relational database management systems."
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/68Q2rSm/9.png",
+        "name": "Problem-Solving Part",
+        "credit": 2,
+        "price": 23000,
+        "details": "This section of the course focuses on developing your problem-solving skills and techniques. Problem-solving is a critical skill for programmers and professionals in various fields."
+    }
+]

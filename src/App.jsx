@@ -1,10 +1,14 @@
 import './App.css'
+import Cards from './components/Cards/Cards'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-4xl bg-red-300'>cldfsfsdf</h1>
+      <div className='space-y-8'>
+        <h2 className='text-3xl font-bold'>Course Registration</h2>
+        <Cards></Cards>
+      </div>
     </>
   )
 }
