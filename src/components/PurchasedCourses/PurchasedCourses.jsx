@@ -1,7 +1,7 @@
 import React from 'react';
 import './PurchasedCourses'
 
-const PurchasedCourses = ({ names,remainingHour,totalPrice }) => {
+const PurchasedCourses = ({ names,remainingHour,totalPrice,totalHour }) => {
     // console.log(names);
     let count = 1
     return (
@@ -15,7 +15,7 @@ const PurchasedCourses = ({ names,remainingHour,totalPrice }) => {
                 }
             </div>
             <hr className='bg-[rgba(28,27,27,0.20)]' />
-            <h3 className='text-base font-medium'>Total Credit Hour : 13</h3>
+            <h3 className='text-base font-medium'>Total Credit Hour : {totalHour}</h3>
             <hr className='bg-[rgba(28,27,27,0.20)]' />
             <h2 className='text-base font-semibold'>Total Price : {totalPrice} USD</h2>
         </div>

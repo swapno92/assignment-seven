@@ -9,8 +9,8 @@ const Cards = () => {
     const [courses, setCourses] = useState([])
     const [names, setNames] = useState([])
     const [remainingHour, setRemainingHour] = useState(20)
+    const [totalHour, setTotalHour] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
-    // console.log(remainingHour);
 
     useEffect(() => {
         fetch('courses.json')
@@ -19,17 +19,25 @@ const Cards = () => {
     }, [])
 
     const handleCard = (course) => {
-        const totalRemainingHour = remainingHour - course.credit
+
         const isTrue = names.find(item => item.id === course.id)
-        if (isTrue || totalRemainingHour < 0) {
+        if (isTrue) {
             toast('The course is already selected')
         }
         else {
-            setRemainingHour(totalRemainingHour)
-            const newNames = [...names, course]
-            setNames(newNames)
-            const price = totalPrice + course.price
-            setTotalPrice(price)
+            const totalRemainingHour = remainingHour - course.credit
+            if (totalRemainingHour < 0) {
+                toast("Total course time is more than 20 hours")
+            }
+            else {
+                const newNames = [...names, course]
+                setNames(newNames)
+                const price = totalPrice + course.price
+                setTotalPrice(price)
+                setRemainingHour(totalRemainingHour)
+                const totalTime = totalHour + course.credit
+                setTotalHour(totalTime)
+            }
         }
     }
 
@@ -50,6 +58,7 @@ const Cards = () => {
                 names={names}
                 remainingHour={remainingHour}
                 totalPrice={totalPrice}
+                totalHour={totalHour}
             ></PurchasedCourses>
         </div>
     );
