@@ -2,7 +2,6 @@ import React from 'react';
 import './PurchasedCourses'
 
 const PurchasedCourses = ({ names,remainingHour,totalPrice,totalHour }) => {
-    // console.log(names);
     let count = 1
     return (
         <div className='w-1/4 p-4 rounded bg-white space-y-4 text-start'>
@@ -11,7 +10,7 @@ const PurchasedCourses = ({ names,remainingHour,totalPrice,totalHour }) => {
             <h2 className='text-xl font-bold'>Course Name</h2>
             <div>
                 {
-                    names.map(name => <p>{count++} {name.name}</p>)
+                    names.map((name,idx) => <p key={idx}>{count++} {name.name}</p>)
                 }
             </div>
             <hr className='bg-[rgba(28,27,27,0.20)]' />

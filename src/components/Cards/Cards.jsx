@@ -22,12 +22,12 @@ const Cards = () => {
 
         const isTrue = names.find(item => item.id === course.id)
         if (isTrue) {
-            toast('The course is already selected')
+            toast('The course is already selected !!!')
         }
         else {
             const totalRemainingHour = remainingHour - course.credit
             if (totalRemainingHour < 0) {
-                toast("Total course time is more than 20 hours")
+                toast("Total course time is more than 20 hours !!!")
             }
             else {
                 const newNames = [...names, course]
@@ -40,7 +40,6 @@ const Cards = () => {
             }
         }
     }
-
 
     return (
         <div className=' flex gap-4'>
