@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Cards = () => {
     const [courses, setCourses] = useState([])
     const [names, setNames] = useState([])
+    // const [remainingHour, setRemainingHour] = useState(20)
 
     useEffect(() => {
         fetch('courses.json')
@@ -17,8 +18,14 @@ const Cards = () => {
 
     const handleCard = (course) => {
         
-        const newNames = [...names, course]
-        setNames(newNames)
+        const isTrue = names.find(item => item.id === course.id)
+        if (isTrue) {
+            toast('The course is already selected')
+        }
+        else {
+            const newNames = [...names, course]
+            setNames(newNames)
+        }
     }
 
 
@@ -34,7 +41,9 @@ const Cards = () => {
                 }
                 <ToastContainer></ToastContainer>
             </div>
-            <PurchasedCourses  names={names}></PurchasedCourses>
+            <PurchasedCourses
+                names={names}
+            ></PurchasedCourses>
         </div>
     );
 };

@@ -2,11 +2,11 @@ import React from 'react';
 import './PurchasedCourses'
 
 const PurchasedCourses = ({ names }) => {
-    let count = 1
     // console.log(names);
+    let count = 1
     return (
         <div className='w-1/4 p-4 rounded bg-white space-y-4 text-start'>
-            <h3 className='text-[#2F80ED] text-lg font-bold'>Credit Hour Remaining 7 hr</h3>
+            <h3 className='text-[#2F80ED] text-lg font-bold'>Credit Hour Remaining {} hr</h3>
             <hr className='bg-[rgba(28,27,27,0.20)]' />
             <h2 className='text-xl font-bold'>Course Name</h2>
             <div>
